@@ -1,0 +1,5 @@
+<ul *ngIf="movies$ | async as movies">  <!--takes a list of movies and async unwraps the observable and angular will handle the subscriptions-->
+    <li *ngFor="let movie of movies">
+        {{ movie.name }}
+    </li>
+</ul>
